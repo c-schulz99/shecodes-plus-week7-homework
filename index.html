@@ -12,21 +12,33 @@
 <body>
     <div class="app-content">
         <header>
-            <form>
-                <input type="search" placeholder="Enter a city..." required />
-                <input type="submit" value="Search" />
+            <form class="search-form">
+                <input type="search" placeholder="Enter a city..." required class="search-form-input"/>
+                <input type="submit" value="Search" class="search-form-button" />
             </form>
         </header>
         <main>
-            <div>
-                <h1>City</h1>
-                <p>
-                    Weekday 00:00, weather condition
-                    <br />
-                    Humidity: 0%, wind: 0.0km/h
-                </p>
+            <div class="weather-app-data">
+                <div>
+                    <h1 class="weather-app-city">City</h1>
+                    <p class="weather-app-details">
+                        Weekday 00:00, weather condition
+                        <br />
+                        Humidity: <strong>0%</strong>, wind: <strong>0.0km/h</strong>
+                    </p>
+                </div>
+                <div class="weather-app-temperature-container">
+                    <div class="weather-app-icon">
+                        ⛅
+                    </div> 
+                    <div class="weather-app-temperature">
+                        12
+                    </div>
+                    <div class="weather-app-unit">
+                        °C
+                    </div>
+                </div>
             </div>
-            <div>⛅ 12°C</div>
         </main>
         <footer>
             This website was coded by 
